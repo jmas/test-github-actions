@@ -5,7 +5,7 @@ cur = con.cursor()
 
 cur.execute("PRAGMA table_info(your_table_name)")
 
-rows = cursor.fetchall()
+rows = cur.fetchall()
 
 print(rows.__dict__)
 

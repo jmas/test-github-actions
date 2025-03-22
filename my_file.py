@@ -3,7 +3,7 @@ con = sqlite3.connect("./data/sample.db")
 
 cur = con.cursor()
 
-cur.execute("SELECT * FRPM movie")
+cur.execute("SELECT * FROM movie")
 
 rows = cur.fetchall()
 

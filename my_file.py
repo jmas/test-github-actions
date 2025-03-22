@@ -3,11 +3,11 @@ con = sqlite3.connect("./data/sample.db")
 
 cur = con.cursor()
 
-cur.execute("PRAGMA table_info(your_table_name)")
+cur.execute("PRAGMA table_info(movie)")
 
 rows = cur.fetchall()
 
-print(rows.__dict__)
+print (len(rows))
 
 # cur.execute("CREATE TABLE movie(title, year, score)")
 
